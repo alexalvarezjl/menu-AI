@@ -5,89 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      background-image: url(restaurant-pattern.png);
-      background-repeat: repeat;
-    }
-
-    .menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px;
-    }
-
-    h2 {
-      text-align: center;
-      width: 100%;
-    }
-
-    ul {
-      list-style: none;
-      margin: 20px;
-      padding: 20px;
-      width: 30%;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px #333;
-    }
-
-    li {
-      text-align: center;
-      margin: 10px 0;
-    }
-
-    .selected {
-      background-color: #ffc107;
-    }
-  </style>
-  <title>Restaurant</title>
+  <title>Menú de Restaurant</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#bebidas">Bebidas</a>
-    <a class="navbar-brand" href="#platos">Platos</a>
-    <a class="navbar-brand" href="#postres">Postres</a>
-  </nav>
+  <h1>Menú de Restaurant</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Opción 1</td>
+        <td>Descripción de la opción 1</td>
+        <td>$10</td>
+        <td><button>Añadir al pedido</button></td>
+      </tr>
+      <!-- Agrega aquí más filas para cada opción del menú -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
 
-  <div class="menu">
-    <h2 id="bebidas">Bebidas</h2>
-    <ul>
-      <li>
-        <button class="btn btn-outline-secondary">Agua - $2</button>
-      </li>
-      <li>
-        <button class="btn btn-outline-secondary">Refresco - $3</button>
-      </li>
-      <li>
-        <button class="btn btn-outline-secondary">Cerveza - $4</button>
-      </li>
-      <li>
-        <button class="btn btn-outline-secondary">Vino - $5</button>
-      </li>
-    </ul>
-    <h2 id="platos">Platos</h2>
-    <ul>
-      <li><button class="btn btn-outline-secondary">Ensalada Caesar - $10</button></li>
-      <li><button class="btn btn-outline-secondary">Pizza Margherita - $12</button>
-      </li>
-      <li><button class="btn btn-outline-secondary">Spaghetti Bolognese - $15</button>
-      </li>
-      <li><button class="btn btn-outline-secondary">Filete de res - $20</button></li>
-    </ul>
-    <h2 id="postres">Postres</h2>
-    <ul>
-      <li><button class="btn btn-outline-secondary">Helado de vainilla - $5</button></li>
-      <li><button class="btn btn-outline-secondary">Pastel de zanahoria - $6</button></li>
-      <li><button class="btn btn-outline-secondary">Cheesecake - $7</button></li>
-      <li><button class="btn btn-outline-secondary">Tiramisu - $8</button></li>
-    </ul>
-  </div>
 </body>
 
 </html>
